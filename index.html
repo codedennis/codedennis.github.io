@@ -5,59 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4f6dcb57e5.js" crossorigin="anonymous"></script>
     <title>Portfólio</title>
 </head>
 <body>
-    <header class="header-container">
-        <div class="header">
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toogle">
-                    <label class="checkbox" for="toogle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class='trace'></div>
-                    </label>
-                    <div class="menu"></div>
-                    <nav class="menu-itens">
-                        <ul>
-                            <li>
-                                <a href="1">Home</a>
-                            </li>
-                            <li>
-                                <a href="2">Sobre</a>
-                            </li>
-                            <li>
-                                <a href="3">Projetos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ennis.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Dennis Santos</span></h1>
             </div>
-
         </div>
-        <h1>
-            Dennis Santos
-        </h1>
-        <h2>
-            Full-Satck Developer
-        </h2>
-        <div class="socialmedia">
-            <a href="1">LinkedIn</a>
-            <a href="1">GitHub</a>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ABOUTME.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, debitis corporis repellendus eum obcaecati earum corrupti officia saepe dolore ipsa magni rem ex quaerat tempore minus ea officiis nisi suscipit mollitia. Nostrum accusantium architecto unde minus veritatis est nobis aliquid ipsam, fuga iure praesentium aut repellat, nulla dolores possimus suscipit sed. Velit eveniet rem laboriosam non at eum cum molestiae nisi voluptas temporibus quis maxime, consectetur ratione odit quo asperiores sit quisquam voluptatum provident. Exercitationem, temporibus. Voluptatum provident debitis unde dolor laborum? Enim eum laborum illum alias fuga, nam doloribus cumque, explicabo harum ad omnis est exercitationem accusantium deserunt quam error dolores adipisci reprehenderit laboriosam sapiente delectus aperiam praesentium et. Officia, quasi aut. Eveniet cum enim, magnam sed, nobis obcaecati, illum ullam laudantium facilis est recusandae porro necessitatibus quos velit explicabo molestiae fuga minima quisquam aperiam. Quibusdam labore, maiores mollitia quaerat repellat eos error consequuntur? Fugiat, ab suscipit. Aspernatur, id?</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FullStack Developer</span><br>Design web/app interfaces</li>
+                            <li><span>FullStack Developer</span><br>Design web/app interfaces</li>
+                            <li><span>FullStack Developer</span><br>Design web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Present</span><br>Proceed - Marketing</li>
+                            <li><span>FullStack Developer</span><br>Design web/app interfaces</li>
+                            <li><span>FullStack Developer</span><br>Design web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2025</span><br>Bachelor's Degree in Computer Science</li>
+                            <li><span>FullStack Developer</span><br>Design web/app interfaces</li>
+                            <li><span>FullStack Developer</span><br>Design web/app interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, maiores! Perspiciatis magnam totam tempora minus omnis distinctio molestias asperiores ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, maiores! Perspiciatis magnam totam tempora minus omnis distinctio molestias asperiores ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, maiores! Perspiciatis magnam totam tempora minus omnis distinctio molestias asperiores ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="personal-portfolio-img/images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum quidem et harum sit mollitia.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="personal-portfolio-img/images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum quidem et harum sit mollitia.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="personal-portfolio-img/images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum quidem et harum sit mollitia.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#"class='btn'>See more</a>
+        </div>
+    </div> 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>contact@exxample.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>02041615</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/dennismkt" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/dennismkt" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/dennismkt" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="personal-portfolio-img/images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Dennis Santos.</p>
+    </div>
+</div>
 
 
-    <main class="container">
-
-    </main>
 
 
-    <footer class="footer">
-
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
